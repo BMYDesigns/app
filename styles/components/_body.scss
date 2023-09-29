@@ -2,8 +2,41 @@ main{
     .left-details{
         display:flex;
         padding: 100px;
-        width: 40%;
+        width: 100%;
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
 
-       
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            .buttons{
+               display: flex; 
+               justify-content: space-evenly;
+               gap: 20px 100px;
+               margin-bottom: 30px;
+               a{
+                text-decoration: none;
+                color: #04ce91 ;
+                background: #bcbcbc;
+                font-size: 20px;
+                padding: 20px 30px
+
+               }
+            }
+            .menu{
+                display: flex;
+                flex-direction: column;
+                background: #bcbcbc;
+                .hedge-container{
+                    display: flex;
+                    
+                }
+            }
+        }
+
 }
 }
