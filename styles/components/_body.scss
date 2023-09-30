@@ -1,12 +1,31 @@
 main{
     .left-details{
         display:flex;
-        padding: 100px;
+        padding: 70px;
         width: 100%;
+        border: 2px solid green;
         .left{
             display: flex;
-            align-items: center;
             justify-content: space-around;
+            .network{
+                display: flex;
+                flex-direction: column;
+                text-transform: capitalize;
+                // justify-content: space-around;
+                .network-counts{
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        font-weight: 300px;
+
+                    }
+                    label{
+                        color: $primary-color
+                    }
+
+                }
+
+            }
 
         }
         .right{
@@ -33,9 +52,66 @@ main{
                 background: #bcbcbc;
                 .hedge-container{
                     display: flex;
+                    background: whitesmoke;
+                    align-items: center;
+                    justify-content: space-evenly;
+                 
+                    padding: 10px 10px;
+                    .profile{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                       
+                    }
+                    .referral{
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                    }
                     
+                    svg{
+                        height: 30px;
+                    }
+
                 }
+                .hedge-menu{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-content: end;
+                    padding: 20px;
+                }
+                
+                .conf-container{
+                    display: flex;
+                    background: whitesmoke;
+                    padding: 20px;
+                    margin: 5px 20px;
+                    align-items: center;
+                    text-transform: capitalize;
+                    justify-content: space-evenly;
+                    .row{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                }
+                .dreamforce-coffee{
+                    display: flex;
+                    background: whitesmoke;
+                    padding: 20px;
+                    margin: 5px 20px;
+                    align-items: center;
+                    text-transform: capitalize;
+                    justify-content: space-evenly;
+                    .row{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+               
             }
+            
         }
 
 }

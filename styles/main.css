@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -82,13 +84,28 @@ header .profile svg {
 
 main .left-details {
   display: flex;
-  padding: 100px;
+  padding: 70px;
   width: 100%;
+  border: 2px solid green;
 }
 main .left-details .left {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+}
+main .left-details .left .network {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+main .left-details .left .network .network-counts {
+  display: flex;
+  flex-direction: column;
+}
+main .left-details .left .network .network-counts h3 {
+  font-weight: 300px;
+}
+main .left-details .left .network .network-counts label {
+  color: #3e4141;
 }
 main .left-details .right {
   display: flex;
@@ -115,6 +132,55 @@ main .left-details .right .menu {
 }
 main .left-details .right .menu .hedge-container {
   display: flex;
+  background: whitesmoke;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+}
+main .left-details .right .menu .hedge-container .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .left-details .right .menu .hedge-container .referral {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+main .left-details .right .menu .hedge-container svg {
+  height: 30px;
+}
+main .left-details .right .menu .hedge-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: end;
+  padding: 20px;
+}
+main .left-details .right .menu .conf-container {
+  display: flex;
+  background: whitesmoke;
+  padding: 20px;
+  margin: 5px 20px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+}
+main .left-details .right .menu .conf-container .row {
+  display: flex;
+  flex-direction: column;
+}
+main .left-details .right .menu .dreamforce-coffee {
+  display: flex;
+  background: whitesmoke;
+  padding: 20px;
+  margin: 5px 20px;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+}
+main .left-details .right .menu .dreamforce-coffee .row {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
